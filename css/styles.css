@@ -49,10 +49,6 @@ body {
     margin-right: 50px;
 }
 
-.conect {
-    margin-left: auto;
-}
-
 .logo {
     margin-right: 93px;
     width: 145px;
@@ -114,9 +110,12 @@ body {
     text-decoration: none;
 }
 
+.conect {
+    display: flex;
+    margin-left: auto;
+}
+
 .mail {
-    width: 135px;
-    height: 16px;
     text-decoration: none;
     color: #757575;
     font-weight: var(--main-font-weight);
@@ -130,6 +129,15 @@ body {
     color: #2196F3;
 }
 
+.mail::before {
+    display: block;
+    content: '';
+    background-image: url('../images/envelope.svg');
+    background-size: 16px 12px;
+    width: 16px;
+    height: 12px;
+}
+
 .phone {
     text-decoration: none;
     color: #757575;
@@ -139,11 +147,25 @@ body {
     margin-left: 50px;
 }
 
+.phone::before {
+    display: block;
+    content: '';
+    background-image: url('../images/Vector.svg');
+    background-size: 10px 16px;
+    width: 10px;
+    height: 16px;
+}
+
 
 /* -----------------------------Main-------------------------------- */
 
 .efect {
+    max-width: 1600px;
     background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/BG-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -195,6 +217,23 @@ body {
     padding-top: 94px;
 }
 
+.our-section-list {
+    display: flex;
+    justify-content: center;
+}
+
+.our-list-item {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: block;
+}
+
+.our-list-item+.our-list-item {
+    margin-left: 30px;
+}
+
 .evocation {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -208,6 +247,7 @@ body {
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .p-style {
@@ -283,10 +323,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 }
 
 .team-mambers {
@@ -371,6 +408,12 @@ footer {
     letter-spacing: 0.03em;
     text-decoration: none;
     margin-top: 9px;
+}
+
+.footer-paragraph {
+    display: flex;
+    width: 145px;
+    justify-content: center;
 }
 
 
