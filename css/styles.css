@@ -112,10 +112,16 @@ body {
 
 .conect {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
 }
 
 .mail {
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #757575;
     font-weight: var(--main-font-weight);
@@ -125,35 +131,37 @@ body {
     text-decoration: none;
 }
 
-.mail:hover {
+.mail:hover,
+.mail:focus {
     color: #2196F3;
 }
 
-.mail::before {
-    display: block;
-    content: '';
-    background-image: url('../images/envelope.svg');
-    background-size: 16px 12px;
-    width: 16px;
-    height: 12px;
+.conect-mail:hover,
+conect-mail:focus {
+    fill: #2196F3;
+}
+
+.conect-mail {
+    margin-right: 10px;
+    fill: #757575;
+}
+
+.conect-phone {
+    margin-right: 10px;
+    fill: #757575;
 }
 
 .phone {
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     text-decoration: none;
     color: #757575;
     font-weight: var(--main-font-weight);
     font-size: 14px;
     line-height: 1.14;
     margin-left: 50px;
-}
-
-.phone::before {
-    display: block;
-    content: '';
-    background-image: url('../images/Vector.svg');
-    background-size: 10px 16px;
-    width: 10px;
-    height: 16px;
 }
 
 
@@ -220,14 +228,16 @@ body {
 .our-section-list {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .our-list-item {
+    display: block;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    display: block;
+    padding: 25px 100px;
 }
 
 .our-list-item+.our-list-item {
@@ -310,6 +320,10 @@ body {
     justify-content: center;
 }
 
+.list {
+    list-style: none;
+}
+
 .team-list-item {
     width: 44px;
     height: 44px;
@@ -324,6 +338,25 @@ body {
     height: 100%;
     border-radius: 50%;
     display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.team-link {
+    fill: #AFB1B8;
+}
+
+.team-link:hover,
+.team-link:focus {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+    background-color: #2196F3;
+    fill: #FFFFFF;
 }
 
 .team-mambers {
@@ -350,6 +383,29 @@ body {
     margin-bottom: 16px;
 }
 
+.regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.customers-list-item {
+    display: block;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+}
+
+.customers-list-item+.customers-list-item {
+    margin-left: 30px;
+}
+
 footer {
     background-color: #2F303A;
     padding-top: 60px;
@@ -359,6 +415,8 @@ footer {
 .address-flex {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .studio-footer {
@@ -410,10 +468,41 @@ footer {
     margin-top: 9px;
 }
 
-.footer-paragraph {
+.footer-cont {}
+
+.footer-list {
     display: flex;
-    width: 145px;
-    justify-content: center;
+}
+
+.footer-list-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-list-item+.footer-list-item {
+    margin-left: 10px;
+}
+
+.footer-link {
+    fill: #FFFFFF;
+}
+
+.footer-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+
+.footer-item-icon:hover,
+.team-item-icon:focus {
+    background-color: #2196F3;
+    fill: #FFFFFF;
 }
 
 
