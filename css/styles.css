@@ -131,13 +131,23 @@ body {
     text-decoration: none;
 }
 
-.mail:hover,
-.mail:focus {
+.mail:focus,
+.mail:hover {
     color: #2196F3;
 }
 
-.conect-mail:hover,
-conect-mail:focus {
+.conect-mail:focus,
+.conect-mail:hover {
+    fill: currentColor;
+}
+
+.phone:hover,
+.phone:focus {
+    color: #2196F3;
+}
+
+.conect-phone:hover,
+.conect-phone:focus {
     fill: #2196F3;
 }
 
@@ -176,6 +186,7 @@ conect-mail:focus {
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0 auto;
 }
 
 .container-efect {
@@ -313,6 +324,7 @@ conect-mail:focus {
     border-radius: 0px 0px 4px 4px;
     width: 270px;
     margin-right: 30px;
+    background-color: #FFFFFF;
 }
 
 .team-list {
@@ -391,6 +403,7 @@ conect-mail:focus {
 .customers-list {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .customers-list-item {
@@ -404,6 +417,23 @@ conect-mail:focus {
 
 .customers-list-item+.customers-list-item {
     margin-left: 30px;
+}
+
+.customers-link {
+    width: 100%;
+    height: 100%;
+    fill: #AFB1B8;
+}
+
+.customers-item-icon:hover,
+.customers-item-icon:focus {
+    fill: #2196F3;
+}
+
+.customers-list-item:hover,
+.customers-list-item:focus {
+    border-color: #2196F3;
+    cursor: pointer;
 }
 
 footer {
@@ -437,6 +467,7 @@ footer {
 }
 
 .map-footer {
+    width: 231px;
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
@@ -468,10 +499,26 @@ footer {
     margin-top: 9px;
 }
 
-.footer-cont {}
+.footer-cont {
+    display: block;
+    margin-top: 11px;
+    margin-left: 70px;
+}
+
+.united {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
 
 .footer-list {
     display: flex;
+    align-items: center;
 }
 
 .footer-list-item {
@@ -483,26 +530,29 @@ footer {
     margin-left: 10px;
 }
 
-.footer-link {
-    fill: #FFFFFF;
-}
-
-.footer-link {
+.footer-item-link {
+    display: block;
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    fill: #FFFFFF;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-item-link:hover,
+.footer-item-link:focus {
     background-color: #2196F3;
-    fill: #FFFFFF;
 }
 
-.footer-item-icon:hover,
-.team-item-icon:focus {
-    background-color: #2196F3;
-    fill: #FFFFFF;
+.map {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mouse {
+    display: block;
 }
 
 
@@ -599,6 +649,7 @@ footer {
 }
 
 .buttons {
+    height: 38px;
     border-style: none;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -616,11 +667,6 @@ footer {
     margin-right: 8px;
 }
 
-.first-button {
-    background-color: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 
 /* for buttons */
 
@@ -628,9 +674,8 @@ footer {
     border-radius: 4px;
     border: solid #2196F3 0.15em;
     cursor: pointer;
-}
-
-.text {
+    background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: #FFFFFF;
 }
 
@@ -651,6 +696,11 @@ footer {
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+}
+
+.box:focus,
+.box:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .box-names {
